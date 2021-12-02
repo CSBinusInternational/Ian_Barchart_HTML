@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Titanic Dashboard</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="page-title"><h1>Titanic Dashboard</h1></div>
+        <div class="info">
+            <img src="titanic.webp">
+            <p>The titanic was a British passenger ship in 1912 which sank somewhere in the North Atlantic Ocean after hitting an iceberg while on it's way to New York City. It has since remained the deadliest peacetime sinking of a superliner or cruise ship and has been made into a blockbuster disasster film, one which has been throuroughly loved by the general public since it first aired.</p>
+            <P>It was the largest ship afloat at the time it entered service, and its one sole voyage was tasked with carrying some of the wealthiest people in the world at that time as well as those who were looking to start a new life in the United States, which makes the sinking even more tragic.</P>
+        </div>
+        <div class="chart-container l-4 m-6 s-12">
+            <div class="chart-wrap">
+                <h2 class="chart-title">Passenger Classes</h2>
+                <hr>
+                <section class="column-bars" style="--chart-height: 300px">
+                    <cbars>0</cbars>
+                    <cbars>90</cbars>
+                    <cbars>180</cbars>
+                    <cbars>270</cbars>
+                    <cbars>360</cbars>
+                    <cbars>450</cbars>
+                    <cbars>540</cbars>
+                    <cbars>630</cbars>
+                    <cbars>720</cbars>
+                    <cbars>800</cbars>
+                </section>
+              
+                <section class="row-bars">
+                    <rbars style="width:40.4%; --chart-color: #000080">Class 1 (323 | 27.4%)</rbars>
+                    <rbars style="width:24.6%; --chart-color: #338080">Class 2 (277 | 21.2%)</rbars>
+                    <rbars style="width:88.6%; --chart-color: #448000">Class 3 (709 | 54.2%)</rbars>
+                </section>
+            </div>
+        </div>
+        <div class="chart-container l-4 m-6 s-12">
+            <div class="chart-wrap">
+                <h2 class="chart-title">Passenger's Genders</h2>
+                <hr>
+                <div class="pie-background">
+                    <div id="pieSlice1" class="pie"><div class="pie"></div></div>
+                    <div id="pieSlice1" class="slice" style="--pieslice1:230.4deg"><div class="pie"></div></div>
+                    <div id="pieSlice2" class="slice" style="--pieslice2:129.6deg"><div class="pie"></div></div>
+                </div>
+                <div class="chart-text" style="--chart-color: #000080">Male:    843 (64%)</div>
+                <div class="chart-text" style="--chart-color: #338080">Female   466 (36%)</div>
+            </div>
+        </div>
+        <div class="chart-container l-4 m-6 s-12">
+            <div class="chart-wrap">
+                <h2 class="chart-title">Age Groups</h2>
+                <hr>
+                <section class="column-bars" style="--chart-height: 420px">
+                    <cbars>0</cbars>
+                    <cbars>100</cbars>
+                    <cbars>200</cbars>
+                    <cbars>300</cbars>
+                    <cbars>400</cbars>
+                    <cbars>500</cbars>
+                    <cbars>600</cbars>
+                    <cbars>700</cbars>
+                    <cbars>800</cbars>
+                    <cbars>900</cbars>
+                </section>
+              
+                <section class="row-bars">
+                    <rbars style="width:15.5%; --chart-color: #000080">Children (140 | 10.7%)</rbars>
+                    <rbars style="width:91.7%; --chart-color: #338080">Adults (826 | 63.1%)</rbars>
+                    <rbars style="width:5.3%; --chart-color: #448000">Elders (48 | 3.7%)</rbars>
+                    <rbars style="width:32.7%; --chart-color: #bb3066">No Data (295 | 22.5%)</rbars>
+                </section>
+            </div>
+        </div>
+        <div class="chart-container l-4 m-6 s-12">
+            <div class="chart-wrap">
+                <h2 class="chart-title">Survivors' Age Groups</h2>
+                <hr>
+                <section class="column-bars" style="--chart-height: 420px">
+                    <cbars>35</cbars>
+                    <cbars>70</cbars>
+                    <cbars>105</cbars>
+                    <cbars>140</cbars>
+                    <cbars>175</cbars>
+                    <cbars>210</cbars>
+                    <cbars>245</cbars>
+                    <cbars>280</cbars>
+                    <cbars>315</cbars>
+                    <cbars>350</cbars>
+                </section>
+              
+                <section class="row-bars">
+                    <rbars style="width:20.6%; --chart-color: #000080">Children (72 | 14.4%)</rbars>
+                    <rbars style="width:95.1%; --chart-color: #338080">Adults (333 | 66.6%)</rbars>
+                    <rbars style="width:5.7%; --chart-color: #448000">Elders (20 | 4.0%)</rbars>
+                    <rbars style="width:21.4%; --chart-color: #bb3066">No Data (75 | 15.0%)</rbars>
+                </section>
+            </div>
+        </div>
+        <div class="chart-container l-4 m-6 s-12">
+            <div class="chart-wrap">
+                <h2 class="chart-title">Survivors</h2>
+                <hr>
+                <div class="pie-background">
+                    <div id="pieSlice2" class="pie"><div class="pie"></div></div>
+                    <div id="pieSlice2" class="slice" style="--pieslice2:223.2deg"><div class="pie"></div></div>
+                    <div id="pieSlice1" class="slice" style="--pieslice1:136.8deg"><div class="pie"></div></div>
+                </div>
+                <div class="chart-text" style="--chart-color: #000080">Survived:    500 (38%)</div>
+                <div class="chart-text" style="--chart-color: #338080">Lost:        809 (62%)</div>
+            </div>
+        </div>
+        <div class="chart-container l-4 m-6 s-12">
+            <div class="chart-wrap">
+                <h2 class="chart-title">Survivors' Genders</h2>
+                <hr>
+                <div class="pie-background">
+                    <div id="pieSlice1" class="pie"><div class="pie"></div></div>
+                    <div id="pieSlice1" class="slice" style="--pieslice1:230.4deg"><div class="pie"></div></div>
+                    <div id="pieSlice2" class="slice" style="--pieslice2:129.6deg"><div class="pie"></div></div>
+                </div>
+                <div class="chart-text" style="--chart-color: #000080">Male:    843 (64%)</div>
+                <div class="chart-text" style="--chart-color: #338080">Female   466 (36%)</div>
+            </div>
+        </div>
+    </body>
+</html>

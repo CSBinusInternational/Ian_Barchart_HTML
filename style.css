@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #252525;
+}
+
+.page-title {
+    font-weight: bold;
+    text-align: center;
+    color:darkslategrey;
+    width: 100%;
+    min-height: 50px;
+    border-bottom: 5px solid #5d5a5d;
+}
+
+.page-title h1 {
+    font-size: 30px;
+    min-inline-size: 30px;
+    padding: none
+}
+
+.info {
+    border: 3px solid #5d5a5d;
+    background-color: #2b2a2b;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    overflow: auto;
+    padding: 0 18px;
+}
+
+.info p {
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff0f3;
+    text-align: justify;
+}
+
+.chart-container {
+    border: 3px solid #5d5a5d;
+    background-color: #2b2a2b;
+    border-radius: 4px;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    float: left;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.chart-title {
+    color: #fff0f3;
+}
+
+.chart-text {
+    background-color: var(--chart-color);
+    color: #fff0f3;
+    position: relative;
+    font-size: 15px;
+    width: 80%;
+    margin: 5px auto;
+}
+.chart-wrap {
+    position: relative;
+    text-align: center;
+    width: 95%;
+    height: 90%;
+    margin-bottom: 10%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.column-bars {
+    font-size: 8px;
+    text-align: left;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: var(--chart-height);
+}
+
+cbars {
+    background-color: white;
+    border: 1px solid grey;
+    border-left: none;
+}
+
+cbars:first-child {
+    border-left: 1px solid grey;
+}
+
+.row-bars {
+    position:absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+}
+
+rbars {
+    display: block;
+    height: 20%;
+    margin-top: 10px;
+    max-width: 100%;
+    padding: 5px;
+    background-color: var(--chart-color);
+}
+  
+.pie-background {
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    border: 1px solid black;
+} 
+  
+.pie {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    clip-path: inset(0 50% 0 0);
+}
+  
+.slice {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    clip-path: inset(0 0 0 50%);
+}
+
+#pieSlice1 .pie {
+    background-color: #000080;
+    transform:rotate(var(--pieslice1));
+}
+
+#pieSlice2 {
+    transform: rotate(var(--pieslice1));
+}
+
+#pieSlice2 .pie {
+    background-color: #338080;
+    transform: rotate(var(--pieslice2));
+}
+
+#pieSlice3 {
+    transform: rotate(calc(var(--pieslice1)+var(--pieslice2)));
+}
+
+#pieSlice3 .pie {
+    background-color: #448000;
+    transform: rotate(var(--pieslice3));
+}
+#pieSlice4 {
+    transform: rotate(calc(var(--pieslice1)+var(--pieslice2)+var(--pieslice3)));
+}
+
+#pieSlice4 .pie {
+    background-color: #bb3066;
+    transform: rotate(var(--pieslice4));
+}
+@media only screen and (min-width: 769px) {
+    .l-1 {width: 8.33%}
+    .l-2 {width: 16.67%}
+    .l-3 {width: 25%}
+    .l-4 {width: 33.33%}
+    .l-5 {width: 41.67%}
+    .l-6 {width: 50%}
+    .l-7 {width: 58.33%}
+    .l-8 {width: 66.67%}
+    .l-9 {width: 75%}
+    .l-10 {width: 83.33%}
+    .l-11 {width: 91.67%}
+    .l-12 {width: 100%}
+}
+
+@media only screen and (max-width: 768px) {
+    .m-1 {width: 8.33%}
+    .m-2 {width: 16.67%}
+    .m-3 {width: 25%}
+    .m-4 {width: 33.33%}
+    .m-5 {width: 41.67%}
+    .m-6 {width: 50%}
+    .m-7 {width: 58.33%}
+    .m-8 {width: 66.67%}
+    .m-9 {width: 75%}
+    .m-10 {width: 83.33%}
+    .m-11 {width: 91.67%}
+    .m-12 {width: 100%}
+}
+
+@media only screen and (max-width: 496px) {
+    .s-1 {width: 8.33%}
+    .s-2 {width: 16.67%}
+    .s-3 {width: 25%}
+    .s-4 {width: 33.33%}
+    .s-5 {width: 41.67%}
+    .s-6 {width: 50%}
+    .s-7 {width: 58.33%}
+    .s-8 {width: 66.67%}
+    .s-9 {width: 75%}
+    .s-10 {width: 83.33%}
+    .s-11 {width: 91.67%}
+    .s-12 {width: 100%}
+}
